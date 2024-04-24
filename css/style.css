@@ -1,5 +1,5 @@
-/* Created by: Mr. Coxall
-* Created on: Sep 2020
+/* Created by: George, Khalil
+* Created on: Apr 2024
 * This file contains the CSS for index.html
 */
 
@@ -15,6 +15,11 @@
   padding-top: 15pt;
 }
 
+.page-content {
+  color: white;
+  font-size: 1.75rem;
+}
+
 body {
   background-color: cornflowerblue;
 }
@@ -26,7 +31,7 @@ p {
   padding-top: 5pt;
 }
 
-.image {
+img {
   width: 400px;
   height: 250px;
   float: right;
