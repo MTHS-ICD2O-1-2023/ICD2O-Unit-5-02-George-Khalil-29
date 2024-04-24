@@ -8,7 +8,7 @@
  * This function displays the slider value.
  */
 function myButtonClicked() {
-  alwaysOnButtonChecked = document.getElementById('on-check').checked
+  alwaysOnButtonChecked = document.getElementById('option-Positive').checked
 
   if (alwaysOnButtonChecked == true) {
     document.getElementById("radio-button-value").innerHTML =
