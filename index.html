@@ -43,16 +43,20 @@
       <p></p>
       <img src="./images/positive_negative.jpg" class="image" alt="positive or negative image" >
       <p></p>
+      <br/>
+      <h5>hello</h5>
       <div id="radio-button-value">
         <p>?</p>
       </div>
       <div id="radio-buttons">
-        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="on-check">
-          <input checked class="mdl-radio__button" id="option-Positive" name="radio-check" type="radio" value="on">
-          <span class="mdl-radio__label">Positive</span>
-        </label>
-        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="off-check">
-          <input class="mdl-radio__button" id="option-Negative" name="radio-check" type="radio" value="off">
+        <!--option 1-->
+      <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-Positive">
+        <input type="radio" id="option-Positive" class="mdl-radio__button" name="options" value="1" checked>
+        <span class="mdl-radio__label">Positive</span>
+      </label>
+      <!--Option 2-->
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-Negative">
+          <input type="radio" id="option-Negative" class="mdl-radio__button" name="options" value="2">
           <span class="mdl-radio__label">Negative</span>
         </label>
       </div>
@@ -60,7 +64,7 @@
         <!-- Raised button with ripple -->
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
           onclick="myButtonClicked()">
-          Show Value
+          GENERATE
         </button>
       </div>
     </main>

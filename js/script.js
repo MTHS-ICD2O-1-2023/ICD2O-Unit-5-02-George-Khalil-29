@@ -9,7 +9,7 @@
  */
 function myButtonClicked() {
   alwaysOnButtonChecked = document.getElementById('option-Positive').checked
-
+  
   if (alwaysOnButtonChecked == true) {
     document.getElementById("radio-button-value").innerHTML =
       "<p>Value is: On</p>"
