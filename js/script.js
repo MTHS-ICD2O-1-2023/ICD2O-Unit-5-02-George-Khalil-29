@@ -8,13 +8,13 @@
  * This function displays the slider value.
  */
 function myButtonClicked() {
-  alwaysOnButtonChecked = document.getElementById('option-Positive').checked
-  
-  if (alwaysOnButtonChecked == true) {
+  Positive = document.getElementById('Positive').checked
+  const randomNumber = Math.floor(Math.random() * 6) + 1
+  if (Positive == true) {
     document.getElementById("radio-button-value").innerHTML =
-      "<p>Value is: On</p>"
+      "<p>The random number is :</p>"
   } else {
     document.getElementById("radio-button-value").innerHTML =
-      "<p>Value is: Off</p>"
+      "<p>The random number is : </p>"
   }
 }
