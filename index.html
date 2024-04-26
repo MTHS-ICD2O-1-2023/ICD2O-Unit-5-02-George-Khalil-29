@@ -1,27 +1,17 @@
 <!DOCTYPE html>
-<!-- ICS2O - Unit  #5-02 -->
-<html lang="en">
+<html>
 <head>
   <meta charset="utf-8" />
-  <meta name="description" content="Positive or Negative #, in JavaScript" />
+  <meta name="description" content="Salary, in JavaScript" />
   <meta name="keywords" content="mths, ics2o" />
-  <meta name="author" content="George, Khalil" />
+  <meta name="author" content="George Khalil" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-    <link rel="manifest" href="/ICS2O-Unit5-01-HTML-Slider-Example/manifest.webmanifest" />
   <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" media="none"
-    onload="if(media!='all')media='all'"><noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  </noscript>
-  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-red.min.css" media="none"
-    onload="if(media!='all')media='all'"><noscript>
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-red.min.css">
-  </noscript>
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
   <link rel="manifest" href="site.webmanifest" />
   <title>Positive or Negative #, in JavaScript</title>
 </head>
@@ -36,36 +26,33 @@
     </header>
     <main class="mdl-layout__content">
       <div class="right-image">
-        <img src="./images/positive_negative.jpg" alt="Shapes Image" />
+        <img src="./images/positive_negative.jpg" alt="laptop image" />
       </div>
-      <main class="mdl-layout__content">
-        <br />
-        <div class="page-content">Select what ind of number you would like: </div>
-        <br />
-        <br />
-        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-Positive">
-          <input type="radio" id="option-Positive" class="mdl-radio__button" name="option" value="1" checked>
+      <br />
+      <div class="page-content">Select what kind of number you would like.</div>
+      <br />
+      <form action="#">
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-positive">
+          <input type="radio" id="option-positive" class="mdl-radio__button" name="kind-of-number" value="1" checked>
           <span class="mdl-radio__label">Positive</span>
         </label>
-        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-Negative">
-          <input type="radio" id="option-Negative" class="mdl-radio__button" name="option" value="2">
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-negative">
+          <input type="radio" id="option-negative" class="mdl-radio__button" name="kind-of-number" value="2">
           <span class="mdl-radio__label">Negative</span>
         </label>
         <br />
         <br />
         <!-- Accent-colored raised button with ripple -->
         <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="randomNumbers()">
-          GENERATE
+          onclick="generateNumber()" type="button">
+          Generate
         </button>
-        </form>
-        <br />
-        <br />
-        <div class="page-content-answer">
-          <div id="radio-button-value"></div>
-          <div id="radio-buttons"></div>
-        </div>
-      </main>
+      </form>
+      <br />
+      <div class="page-content-answer">
+        <div id="number-output"></div>
+      </div>
+    </main>
   </div>
 </body>
 </html>

@@ -4,20 +4,24 @@
 // Created on: Apr 2024
 // This file contains the JS functions for index.html
 
-const randomNumber = Math.floor(Math.random() * 6) + 1
+"use strict"
 
 /**
- * This function displays the slider value.
+ * This function calculates pay and taxes.
  */
-function randomNumbers() {
-  
-  const optionPositive = document.getElementById('option-Positive').checked
-  
-  if (optionPositive == true) {
-    document.getElementById("radio-button-value").innerHTML =
-    "<p>Value is: On</p>"
+function generateNumber () {
+  // generate randome number
+  const randomNumber = Math.floor(Math.random() * 6) + 1
+
+  // input
+  const numberKind = document.getElementById('option-positive').checked
+
+  // process
+  if (numberKind == true) {
+    // output
+    document.getElementById('number-output').innerHTML = 'The random number is: ' + randomNumber
   } else {
-    document.getElementById("radio-button-value").innerHTML =
-    "<p>Value is: Off</p>"
+    // output
+    document.getElementById('number-output').innerHTML = 'The random number is: ' + (-1 * randomNumber)
   }
 }
