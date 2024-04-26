@@ -10,7 +10,7 @@
  * This function calculates pay and taxes.
  */
 function generateNumber () {
-  // generate randome number
+  // generate random number
   const randomNumber = Math.floor(Math.random() * 6) + 1
 
   // input
